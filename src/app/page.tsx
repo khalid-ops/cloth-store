@@ -3,15 +3,10 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import {
-  ShoppingBag,
   Truck,
   Shield,
   RotateCcw,
   Star,
-  Menu,
-  Search,
-  User,
-  Heart,
   ArrowRight,
   Sparkles,
 } from "lucide-react"
@@ -23,83 +18,11 @@ export default function ClothingStoreLanding() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       {/* Header */}
-      <header className="sticky top-0 z-50 w-full border-b border-rose-100 bg-white/80 backdrop-blur-md supports-[backdrop-filter]:bg-white/80">
-        <div className="container flex h-20 items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <Link href="/" className="flex items-center space-x-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-rose-400 to-pink-500">
-                <Sparkles className="h-5 w-5 text-white" />
-              </div>
-              <span className="font-bold text-2xl bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent">
-                Modest Muse
-              </span>
-            </Link>
-          </div>
 
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link
-              href="#"
-              className="text-sm font-medium text-gray-700 hover:text-rose-600 transition-colors relative group"
-            >
-              Hijabs
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rose-600 transition-all group-hover:w-full"></span>
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-medium text-gray-700 hover:text-rose-600 transition-colors relative group"
-            >
-              Dupattas
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rose-600 transition-all group-hover:w-full"></span>
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-medium text-gray-700 hover:text-rose-600 transition-colors relative group"
-            >
-              Abayas
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rose-600 transition-all group-hover:w-full"></span>
-            </Link>
-            <Link
-              href="#"
-              className="text-sm font-medium text-gray-700 hover:text-rose-600 transition-colors relative group"
-            >
-              Accessories
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rose-600 transition-all group-hover:w-full"></span>
-            </Link>
-            {/* <Link
-              href="#"
-              className="text-sm font-medium text-rose-600 hover:text-rose-700 transition-colors relative group"
-            >
-              Sale
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rose-600 transition-all group-hover:w-full"></span>
-            </Link> */}
-          </nav>
-
-          <div className="flex items-center space-x-3">
-            <Button variant="ghost" size="icon" className="hidden md:flex hover:bg-rose-50 hover:text-rose-600">
-              <Search className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-rose-50 hover:text-rose-600 relative">
-              <Heart className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-rose-50 hover:text-rose-600">
-              <User className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="hover:bg-rose-50 hover:text-rose-600 relative">
-              <ShoppingBag className="h-5 w-5" />
-              <span className="absolute -top-1 -right-1 h-4 w-4 bg-rose-500 text-white text-xs rounded-full flex items-center justify-center">
-                2
-              </span>
-            </Button>
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <Menu className="h-5 w-5" />
-            </Button>
-          </div>
-        </div>
-      </header>
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative w-full py-16 md:py-24 lg:py-32 xl:py-40 overflow-hidden">
+        <section className="relative w-full py-16 md:py-24 lg:py-32 xl:py-40 overflow-hidden px-2 md:px-4 lg:px-6">
           <div className="absolute inset-0 bg-gradient-to-br from-rose-50 via-pink-50 to-purple-50"></div>
           <div className="absolute inset-0 opacity-40">
             <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/20 to-transparent"></div>
@@ -187,7 +110,7 @@ export default function ClothingStoreLanding() {
         </section>
 
         {/* Featured Collections */}
-        <section className="w-full py-16 md:py-24 lg:py-32 bg-white">
+        <section className="w-full py-16 md:py-24 lg:py-32 bg-white px-2 md:px-4 lg:px-6">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center mb-16">
               <div className="space-y-4">
@@ -282,7 +205,7 @@ export default function ClothingStoreLanding() {
         </section>
 
         {/* Why Choose Us */}
-        <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-br from-gray-50 to-rose-50">
+        <section className="w-full py-16 md:py-24 lg:py-32 bg-gradient-to-br from-gray-50 to-rose-50 px-2 md:px-4 lg:px-6">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-6 text-center mb-16">
               <div className="space-y-4">
@@ -326,7 +249,7 @@ export default function ClothingStoreLanding() {
                 <div className="space-y-3">
                   <h3 className="text-xl font-bold text-gray-900">Easy Returns</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    30-day hassle-free returns. Not satisfied? We&apos;ll make it right.
+                    30-day hassle-free returns. Not satisfied? We&apos;ll make it right. No Worries
                   </p>
                 </div>
               </div>
@@ -383,32 +306,6 @@ export default function ClothingStoreLanding() {
           </div>
         </section> */}
       </main>
-
-      {/* Footer */}
-      <footer className="w-full py-8 bg-gray-900 text-gray-300">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <div className="flex items-center space-x-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-br from-rose-400 to-pink-500">
-                <Sparkles className="h-4 w-4 text-white" />
-              </div>
-              <span className="font-bold text-xl text-white">Modest Muse</span>
-            </div>
-            <p className="text-sm text-gray-400">© 2024 Modest Muse. All rights reserved.</p>
-            <nav className="flex gap-6">
-              <Link href="#" className="text-sm hover:text-white transition-colors">
-                Terms of Service
-              </Link>
-              <Link href="#" className="text-sm hover:text-white transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="#" className="text-sm hover:text-white transition-colors">
-                Contact Us
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </footer>
     </div>
   )
 }
