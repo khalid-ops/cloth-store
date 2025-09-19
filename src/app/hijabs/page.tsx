@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Badge, ChevronDown, Filter, Grid3X3, Heart, List, Star } from "lucide-react";
+import { Badge, ChevronDown, Filter, Grid3X3, Heart, List, Star, X } from "lucide-react";
 import { useState } from "react";
 
 const products = [
