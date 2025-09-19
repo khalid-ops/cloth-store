@@ -5,6 +5,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Badge, ChevronDown, Filter, Grid3X3, Heart, List, Star, X } from "lucide-react";
 import { useState } from "react";
 
+// Sample product data
+
 const products = [
   {
     id: 1,
